@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>myMovies Xpress! - Search</title>
+		<link rel="stylesheet" type="text/css" href="../css/mySite.css" />
+		<script src="./script.js"></script>
+	</head>
+	<body>
+		<h3>Welcome, <?= $_SESSION["displayName"] ?> (<a href="javascript: confirmLogout()">logout</a>)</h3>
+		<h1>myMovies Xpress!</h1>
+<!-- DO NOT REMOVE OR MODIFY THE CODE OR PLACE YOUR CODE ABOVE THIS LINE -->
+	<p> Please enter the name of the movie you are searching for. </p>
+	<form action="./search.php" method="post">
+		<!-- One Text Field-->
+		<label for="keyword">Keyword: </label>
+		<input type="text" id="keyword" name="keyword">
+		
+		<!-- Three Buttons-->
+		<input type="button" value="Cancel" onclick="javascript: confirmCancel()"/>
+		<input type="reset" value="Clear">
+		<input type="submit" value="Search">
+		
+	</form>
+		
+
+<!-- DO NOT REMOVE OR MODIFY THE CODE OR PLACE YOUR CODE BELOW THIS LINE -->		
+	</body>
+</html>

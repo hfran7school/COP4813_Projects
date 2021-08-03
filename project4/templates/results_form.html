@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>myMovies Xpress! - Search Results</title>
+		<link rel="stylesheet" type="text/css" href="../css/mySite.css" />
+		<script src="./script.js"></script>
+	</head>
+	<body>
+		<h3>Welcome, <?= $_SESSION["displayName"] ?> (<a href="javascript: confirmLogout()">logout</a>)</h3>
+		<h1>myMovies Xpress!</h1>
+<!-- DO NOT REMOVE OR MODIFY THE CODE OR PLACE YOUR CODE ABOVE THIS LINE -->
+	<?php $resultsLength=count($resultsArray); ?>
+	<p> <?=$resultsLength?> movies for the keyword <?=$searchString?></p>
+	<input type="button" value="Cancel" onclick="javascript: confirmCancel()"/>
+	
+	<table>
+		<tr>
+			<th>Poster</th>
+			<th>Title(Year)</th>
+			<th>Add Movie</th>
+		</tr>
+		<?php
+		$i=0;
+		while($i < $resultsLength){
+			echo "<tr>";
+			
+			//poster
+			if($resultsArray[$i]['Poster'] != NULL && $resultsArray[$i]['Poster'] != "N/A"){
+				echo "<td style='text-align:center'> <img src='" .$resultsArray[$i]['Poster']. "' alter='poster' height='100'></td>";
+			}else{
+				echo "<td style='text-align:center'>(No poster given)</td>";
+			}
+			
+			//Titke(Year)
+			echo "<td style='text-align:center'><a href='https://www.imdb.com/title/" .$resultsArray[$i]['imdbID']. "/' target='_blank'>" .$resultsArray[$i]['Title']. " (" .$resultsArray[$i]['Year']. ")</a></td>"; 
+		
+			
+			//add movie button
+			echo "<td style='text-align:center'><a href=\"javascript: addMovie('".$resultsArray[$i]['imdbID']."')\">+</a></td>";
+			
+			$i++;
+			echo "</tr>";
+		}
+		?>
+	</table>
+	
+	
+	
+		
+
+<!-- DO NOT REMOVE OR MODIFY THE CODE OR PLACE YOUR CODE BELOW THIS LINE -->
+	</body>
+</html>

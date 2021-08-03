@@ -1,0 +1,179 @@
+@import "default.css";
+/* DO NOT MODIFY THE @import STATEMENT ABOVE */
+
+/* You will use this CSS file for each of your projects. Simply add new CSS classes and elements to the end of the file. */
+
+/* Be careful to keep your selector names unique to avoid collisions, which can cause confusion. */
+
+/*About Me Section */
+h2.bluetext {
+	color: blue;
+}
+
+h2.greentext{
+	color: green;
+}
+
+h2.redtext{
+	color:red;
+}
+
+li.college{
+	font-weight: bold;
+}
+
+li.highschool{
+	font-style: italic;
+}
+
+li.certificate{
+	text-decoration: underline;
+}
+
+a.big:hover{
+	font-size:150%;
+}
+
+/*Schedule Section*/
+table.sched, th.sched, td.sched {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th.sched, td.sched {
+	padding: 5px;
+	text-align: center;    
+}
+th.sched{
+	background-color: rgb(145,211,255);
+}
+td.sched{
+	background-color: rgb(248,227,255);
+}
+
+/**CUSTOM CHECKBOX**/
+/* Customize the label (the container) */
+.container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: gray;
+}
+
+
+/* When the checkbox is checked*/
+.container1 input:checked ~ .checkmark1 {
+  background-color: blue;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container1 input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container1 .checkmark1:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/**CUSTOM RADIO BUTTON**/
+/* Customize the label (the container) */
+.container2 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+/* When the radio button is checked, add a green background */
+.container2 input:checked ~ .checkmark2 {
+  background-color: green;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container2 input:checked ~ .checkmark2:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container2 .checkmark2:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+/*Account Section*/

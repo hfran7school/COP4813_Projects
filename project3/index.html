@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Statistical Calculator</title>
+		<link rel="stylesheet" type="text/css" href="http://139.62.210.181/~fh462942/css/mySite.css">
+		<script src="script.js"></script>
+	</head>
+	
+	<body>
+	<h2> Statistical Calculator </h2>
+		<form onSubmit="return performStatistics();" method = "post">
+			<!-- Control -->
+			<p> (The sample numbers currently in the "Numbers" field can be changed) </p>
+			<label for="numbers"> Numbers: </label> <br>
+			<textarea id="numbers" name="numbers" rows="2" cols= "40">5 3 10 0 3 2 10 3 7 8</textarea><br>
+			
+			<input type="reset" value="Reset">
+			<input type="submit" value="Submit"> <br><br>
+			
+			<!-- Read Only Fields -->
+			<label for="min"> Min: </label>
+			<input type="text" id="min" name="min" readonly><br>
+			
+			<label for="max"> Max: </label>
+			<input type="text" id="max" name="max" readonly><br>
+			
+			<label for="mean"> Mean: </label>
+			<input type="text" id="mean" name="mean" readonly><br>
+			
+			<label for="median"> Median: </label>
+			<input type="text" id="median" name="median" readonly><br>
+			
+			<label for="mode"> Mode: </label>
+			<input type="text" id="mode" name="mode" readonly><br>
+			
+			<label for="stddev"> Std Dev: </label>
+			<input type="text" id="stddev" name="stddev" readonly><br>
+			
+			<label for="sum"> Sum: </label>
+			<input type="text" id="sum" name="sum" readonly><br>
+			
+			<label for="variance"> Variance: </label>
+			<input type="text" id="variance" name="varience" readonly><br>
+		</form>
+		
+		<h2> Other Links </h2>
+		<a href="../index.html">Eportfolio</a></p>
+		
+	</body>
+</html>

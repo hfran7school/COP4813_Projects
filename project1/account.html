@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" title="Creating an Account">
+	<head>
+		<title>Create an Account</title>
+		<link rel="stylesheet" type="text/css" href="http://139.62.210.181/~fh462942/css/mySite.css">
+	</head>
+	
+	<body>
+	<section>
+		<h1>Create an Account</h1>
+		<form action="https://unfinishedbusiness.app/alert.php" method="post">
+		
+			<!--Three Text fields-->
+			<label for="fname">First name:</label>
+			<input type="text" id="fname" name="fname"><br>
+			<label for="lname">Last name:</label>
+			<input type="text" id="lname" name="lname"><br>
+			<label for="email">Email Address:</label>
+			<input type="text" id="email" name="email"><br>
+			
+			<p></p>
+		
+			<!--Two password fields-->
+			<label for="pwd">Password:</label>
+			<input type="password" id="pwd" name="pwd"><br>
+			<label for="pwd">Confirm Password:</label>
+			<input type="password" id="pwdcnfm" name="pwdcnfm"><br>
+			
+			<p></p>
+			
+			<!--One date field-->
+			<label for="birthday">Birthday:</label>
+			<input type="date" id="birthday" name="birthday" min="1970-01-01" max="2015-10-21"><br>
+			
+			<p></p>
+		
+			<!--Four radio buttons-->
+			<h3>Major</h3>
+			
+			<label for="compsci" class="container2"><a href="https://www.unf.edu/ccec/computing/Computer_Science_Program.aspx" target="_blank">Computer Science</a>
+				<input type="radio" id="compsci" name="major" value="compsci">
+				<span class="checkmark2"></span>
+			</label><br>
+			
+			<label for="infosci" class="container2"><a href="https://www.unf.edu/ccec/computing/Information_Science_Program.aspx" target="_blank">Information Science</a>
+				<input type="radio" id="infosci" name="major" value="infosci">
+				<span class="checkmark2"></span>
+			</label><br>
+			
+			
+			<label for="infosys" class="container2"><a href="https://www.unf.edu/ccec/computing/Information_Systems_Program.aspx" target="_blank">Information Systems</a>
+				<input type="radio" id="infosys" name="major" value="infosys">
+				<span class="checkmark2"></span>
+			</label><br>
+			
+			<label for="infotech" class="container2"><a href="https://www.unf.edu/ccec/computing/Information_Technology_Program.aspx" target="_blank">Information Technology</a>
+				<input type="radio" id="infotech" name="major" value="infotech">
+				<span class="checkmark2"></span>
+			</label></br>
+			
+			<!--Eight Checkboxes-->
+			<h3>Programming Language Proficiency</h3>
+			<table>
+				<tr>
+					<td><label for="c" class="container1"><a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C</a>
+						<input type="checkbox" id="c" name="language1" value="c">
+						<span class="checkmark1"></span>
+					</label></td>
+			
+					<td><label for="c#" class="container1"><a href="https://en.wikipedia.org/wiki/C-sharp" target="_blank">C#</a>
+						<input type="checkbox" id="c#" name="language2" value="c#">
+						<span class="checkmark1"></span>
+					</label></td>
+				</tr>
+				<tr>
+					<td><label for="java" class="container1"><a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java</a>
+						<input type="checkbox" id="java" name="language3" value="java">
+						<span class="checkmark1"></span>
+					</label></td>
+			
+					<td><label for="javascript" class="container1"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+						<input type="checkbox" id="javascript" name="language4" value="javascript">
+						<span class="checkmark1"></span>
+					</label></td>
+				</tr>
+				<tr>
+					<td><label for="php" class="container1"><a href="https://en.wikipedia.org/wiki/PHP" target="_blank">PHP</a>
+						<input type="checkbox" id="php" name="language5" value="php">
+						<span class="checkmark1"></span>
+					</label></td>
+				
+					<td><label for="python" class="container1"><a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python</a>
+						<input type="checkbox" id="python" name="language6" value="python">
+						<span class="checkmark1"></span>
+					</label></td>
+				</tr>
+				<tr>
+					<td><label for="visualbasic" class="container1"><a href="https://en.wikipedia.org/wiki/Visual_Basic" target="_blank">Visual Basic</a>
+						<input type="checkbox" id="visualbasic" name="language7" value="visualbasic">
+						<span class="checkmark1"></span>
+						</label></td>
+													
+					<td><label for="other" class="container1">Other
+						<input type="checkbox" id="other" name="language8" value="other">
+						<span class="checkmark1"></span>
+					</label></td>
+				</tr>
+			</table>
+			
+
+			<!--Two Buttons-->
+			<input type="reset" value="Reset">
+			<input type="submit" value="Submit">
+			
+			
+			<input type="hidden" name="username" value="628674072" />
+			<input type="hidden" name="to_email_address" value="hfran7@yahoo.com" />
+			<input type="hidden" name="to_display_name" value="Hailey Francis" />
+		</form>
+	</section>
+	
+	<h1>Other Links</h1>
+	<p><a href="index.html">Home Page</a>
+	<a href="http://139.62.210.181/~fh462942/index.html">Eportfolio</a></p>
+	</body>
+</html>
